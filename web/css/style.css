@@ -1,0 +1,586 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img {
+    margin: 10px;
+}
+
+/* Clases */
+.primario{
+    background-color:#609f63;
+    color:black;
+}
+
+.secundario{
+    background-color:#eba007;
+    color:black;
+}
+
+.fondo{
+    background-color:black;
+    color:white;
+}
+
+.blanco{
+    background-color:white;
+    color: black;
+}
+
+.test{
+    display:none;
+}
+
+#content{
+    background-color:black;
+}
+#contentprofile{
+    background-color:black;
+}
+
+/*Menu*/
+#wrap{
+    height:510px;
+}
+#menu{
+    margin:0;
+    border-top:1px solid #609f63;
+}
+
+#logo{
+    background: no-repeat;
+    background-image:url('../images/logo.png');
+    height:75px;
+    background-position:center; 
+
+}
+#logo:hover{
+    background: no-repeat;
+    background-image:url('../images/logo.png');
+    background-position:center; 
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
+#acceso{
+    position:relative;
+}
+#bentrar{
+    height:75px;
+}
+
+#background{
+    height:430px;
+    background:no-repeat;
+    background-image:url("../images/background.png");
+    background-position:center;
+
+}
+#sLogo{
+    width:100%;
+    height:300px;
+    opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+    background:no-repeat;
+    background-image:url("../images/kk2.png");
+    background-position:center;
+}
+
+#scroll{
+    position:relative;
+    margin-top:3px;
+}
+#paginas{
+    position:relative;
+    left:43%;
+    margin:0s auto 0 auto; width:390px; 
+}
+#content-scroll{
+    position:relative;
+    z-index:1;
+    background: #609f63;
+}
+
+#cupon{
+    background-color:red;
+    width:150px;
+    height:45px;
+}
+
+#footer{
+    margin:0;
+    position:relative;
+    z-index:2;
+}
+#logo-footer{
+    position:relative;
+    background:no-repeat;
+    background-image:url("../images/logo-footer.png");
+    height:140px;
+    margin-top:-19px;
+    background-position:10px 0px;
+}
+
+#listmenu{
+    margin:0;
+    cursor:pointer;
+    padding:0;
+    padding-top:50px;
+    height:569px;
+    border-top: 1px solid #609f63;
+    background-color:#609f63;
+
+}
+#warp-profile{
+    margin:0;
+}
+#listmenu li{
+    background-color:white;
+    width:100%;
+    padding-right:5px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color:black;
+    text-align:right;
+    height:75px;
+    line-height:75px;
+    font-size:2em;
+    list-style:none;
+    border-right:3px solid black;
+}
+
+#listmenu li:hover{
+    border-right:3px solid #609f63;
+
+}
+#listmenu li:active{
+    border-right:3px solid orange;
+
+}
+#listmenu li a{
+    text-decoration:none;
+}
+#sep{
+    margin:0;
+    height:569px;
+    background-color:black;
+    border-top:1px solid #609f63;
+    border-bottom: 1px solid #609f63;
+
+}
+#sep:hover{
+}
+
+#contenedor{
+    margin:0;
+    text-align: center;
+    background-color:white;
+    border:1px solid #609f63;
+    height:569px;
+    border-left:2px solid #eba007;
+}
+
+
+.cprofile{
+    border: 2px solid black;
+    border-left: 4px solid #eba007;
+    width:100%;
+    height:530px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+#edit{
+    display:block;
+}
+#coupon{
+    display:none;
+}
+#statics{
+    display:none;
+}
+#franchise{
+    display:none;
+}
+#business{
+    display:none
+}
+
+#contenedor h1{
+    display:block;
+    background-color: #609f63;
+    width: calc(100% + 7px);
+    color:black;
+}
+#edit > ul li{
+    cursor:pointer;
+    display:inline;
+    border-bottom: 2px solid #609f63;
+
+}
+#edit > ul li:hover{
+    border-bottom: 2px solid #eba007;
+}
+#edit > ul li:active{
+    font-size:18px;
+}
+
+#eprofile{
+    text-align: left;
+}
+
+
+
+#content-result{
+    margin: 0;
+    height: 730px;
+    position:relative;
+    z-index:1;
+}
+#col{
+    margin-left: auto;
+    margin-right: auto;
+}
+#result{
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    margin-top:3px;
+}
+*
+/*Maquetación cupon*/
+
+#couponFactory {
+    margin: 0 auto;
+    width: 95%;
+    float: left;
+}
+
+/* LEFT */ 
+
+#couponFactoryL {
+    float: left;
+    width: 65%;
+    margin: 1%;
+    padding: 1%;
+}
+
+#couponView {
+    width: 500px;
+    height:250px;
+    margin: 0 auto;
+}
+
+#stageNav {
+    margin: 10px;
+}
+
+.imgButton {
+    margin: 2%;
+}
+
+
+/* VISTA PREVIA CUPON */ 
+
+.cupon div {
+    border: none;
+}
+
+.cupon {
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    border: 2px solid #eba007;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.cL {
+    height: 90%;
+    width: 50%;
+    float: left;
+    margin-bottom: 0.5%;
+}
+
+.cR {
+    float: left;
+    width: 50%;
+}
+
+.cBot {
+    background: #eba007;
+    clear: both;
+    width: 100%;
+    height: 1.17em;
+}
+
+.cuponImg {
+    margin: 3%;
+    background: #609F63;
+    width: 93%;
+    height: 93%;
+}
+
+.cuponImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.cuponTipo {
+    background: #eba007;
+    border: 1px solid black;
+    font: 1.5em arial,sans-serif;
+    color: #fff;
+    float:left;
+    margin-top: -20%;
+    padding: 1% 10% 1% 5%;
+}
+
+.cuponTitle {
+    background: #eba007;
+    margin-top: 3%;
+    font: 1em arial,sans-serif;
+    padding: 2.5%;
+}
+
+.cuponComercio {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.cuponComercio span {
+    display: block;
+    font: 0.9em arial,sans-serif;
+}
+
+.cuponComercio a {
+    font: 0.9em arial,sans-serif;
+    margin-left: 10%;
+}
+
+.cuponComercio img {
+    width: 100%;
+    height: 100%;
+}
+
+.cuponComercio div {
+    float: left;
+}
+
+.cuponDireccion {
+    clear: both;
+    margin-left: 10%;
+    margin-top: 30%;
+    font: 0.9em arial,sans-serif;
+}
+
+.cuponLocalidad {
+    margin-left: 10%;
+    font: 1.2em arial,sans-serif;
+}
+
+.compartir {
+    margin-left: 15%;
+}
+
+.compartir img {
+    width: 17%;
+    height: 17%;
+}
+
+.cuponValidez {
+    float: left;
+    margin-top: 0.5%;
+    margin-left: 3%;
+    font: 0.8em arial,sans-serif;
+}
+
+.cuponCondiciones {
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 2%;
+    font: 0.8em arial,sans-serif;
+}
+
+.allCond {
+    display: none;
+    background: #609F63;
+    position: absolute;
+    padding-right: 1em;
+}
+
+
+/* RIGHT */
+
+#couponFactoryR {
+    float: left;
+    width: 25%;
+    margin: 1%;
+}
+
+#couponOptions {
+    width: 100%;
+    height: 600px;
+}
+
+#galeria {
+    width:100%;
+}
+
+#galeria img {
+    width: 30%;
+    height: 30%;
+}
+
+#condiciones div {
+    height: 13em;
+    overflow: auto;
+}
+
+#condiciones li {
+    list-style: none;
+}
+
+/* CLASS */
+
+.aux {
+    clear: both;
+}
+
+.icono{
+    position:absolute;
+    width:32px;
+    background:no-repeat;
+    height:32px;
+    opacity:.3;
+}
+
+.icono:hover{
+    opacity:1;
+}
+#contacto{
+    cursor:pointer;
+    position:absolute;
+    bottom:5px;
+    left: 55px;
+    width: calc(32px * 6);
+}
+
+#facebook{
+
+    left:calc(32px * 0);
+    background-image:url("../images/facebook.png");
+}
+
+#twitter{
+    left:calc(32px * 1);
+    background-image:url("../images/twitter.png");
+
+}
+
+#google{
+    left:calc(32px * 2);
+    background-image:url("../images/google.png");
+}
+#mail{
+    left: calc(32px * 3);
+    background-image:url("../images/mail.png");
+}
+#youtube{
+    left: calc(32px * 4);
+    background-image:url("../images/youtube.png");
+}
+.cfooter{
+    text-align:center;
+}
+.cfooter:hover{
+}
+.cfooter a{
+    color: white;
+    text-decoration:none;
+}
+.cfooter a:hover{
+    color:#eba007;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+/*login*/
+
+#modal-content{
+    margin: 0 auto;
+}
+#login{
+    margin: 0 auto;
+   color: black;
+}
+
+#login-form{
+    margin: 0 auto;
+}
+
+#register-content{
+    width: 600px;
+    margin: 0 auto;
+    color: black;
+}
+
+#register-container{
+    width: 650px;
+}
+
+
+#rfranquicia{
+    display:none;
+}
+#rcomercio{
+    display:none;
+}
+.active a{
+    text-decoration:none;
+    color:#eba007;
+}

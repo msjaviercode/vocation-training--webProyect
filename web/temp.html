@@ -1,0 +1,177 @@
+<%-- 
+    Document   : codigo
+    Created on : 09-may-2014, 11:36:43
+    Author     : Mushi
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Codigo</title>
+    </head>
+    <body>
+        <div>
+            
+            <h1>Panel de administración</h1>
+            <form id="form" name="form" method="post" action="LoginAdmin">
+                
+                <h1>Login</h1>
+                <label>
+                    <span>Admin:</span>
+                </label>
+                <input type="text" name="adminId" placeholder="" id="adminId" />
+                <br  />
+                <label>Password: 
+
+                </label>
+                <input type="password" name="adminPassword" placeholder="*********" id="adminPassword" />
+                <br />
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        
+        
+        <h1>Business</h1>
+        <div>
+            <form id="form" name="form" method="post" action="LoginComercio">
+                <h1>Login</h1>
+                <p>Por favor logueate 
+                    <br/>¿Comercio nuevo? <a href="rbusiness.jsp">¡Regístra tu comercio!</a></p>
+                <label>
+                    <span>Correo</span>
+                </label>
+                <input type="text" name="businessID" placeholder="ejemplo1234@ex.com" id="businessID" />
+                <br  />
+                <label>Password
+
+                </label>
+                <input type="password" name="password" placeholder="*******" id="password" />
+                <br />
+                <button type="submit">Sign-in</button>
+            </form>
+        </div>
+        
+        <h1>BusinessProfile</h1>
+        <form method="post" action="ProfileComercio" name="perfil"> 
+                <!-- Cargar el valor actual de cada atributo en el input -->
+                Email: <input type="email" name="email" /><br />
+                Current password:  <input  type="password" name="password" />
+                New password: <input type="password" name="password2" /><br />
+                <!-- De momento input de texto -->
+                Profile image: <input name="profileimage" /><br />
+                Country: <input name="country" /><br />
+                Address: <input name="address" /><br />
+                City: <input name="city" /><br />
+                State or province: <input name="st"><br />
+                CP: <input name="cp" /><br />
+                Description: <textarea name="desc" rows="4" cols="50"></textarea>
+
+                <button>Enviar</button>
+            </form>
+        <h1>Franchise</h1>
+        <div>
+            <form id="form" name="form" method="post" action="LoginFranquicia">
+                <h1>Login</h1>
+                <p>Por favor logueate 
+                    <br/><a href="rfranchise.jsp">Registrar Franquicia</a></p>
+                <label>
+                    <span>Correo</span>
+                </label>
+                <input type="text" name="email" placeholder="ejemplo1234@ex.com" id="email" />
+                <br  />
+
+                <label>Password</label>
+                <input type="password" name="password" placeholder="*******" id="password" />
+                <br />
+                <button type="submit">Sign-in</button>
+            </form>
+        </div>
+        <h1>Franchise Profile</h1>
+        <form method="post" action="ProfileFranquicia" name="perfil"> 
+                <!-- De momento input de texto -->
+                Profile image: <input name="profileimage" /><br />
+                Background: <input name="background" /><br />
+                Address: <input name="address" /><br />
+                CP: <input name="cp" /><br />
+                State or province: <input name="st"><br />
+                City: <input name="city" /><br />
+                Country: <input name="country" /><br />
+
+                <button>Enviar</button>
+            </form>
+        <h1>Login</h1>
+             <div>
+            <form id="form" name="form" method="post" action="Login">
+                <h1>Login</h1>
+                <p>Por favor logueate 
+                    <br/>¿Usuario Nuevo? <a href="register.jsp">¡Regístrate</a></p>
+                <label>
+                    <span>Correo</span>
+                </label>
+                <input type="text" name="userId" placeholder="ejemplo1234@ex.com" id="userId" />
+                <br  />
+                <label>Password
+
+                </label>
+                <input type="password" name="password" placeholder="*******" id="password" />
+                <br />
+                <button type="submit">Sign-in</button>
+            </form>
+        </div>
+        <h1>rBusiness</h1>
+        <form method="post" action="RegisterComercio" name="registro">
+            BusinessName: <input type="text" name="businessName"><br> 
+            Email: <input type="text" name="email"><br>
+            Country: <input type="text" name="country"><br>
+            FullAddress: <input type="text" name="fulladdress"><br>
+            City: <input type="text" name="city"><br>
+            StateOrProvince: <input type="text" name="stateOrProvince"><br>
+            CP: <input type="text" name="cp"><br>
+            Password: <input  type="text" name="password"><br>
+            Password confirm: <input type="text" name="password2"><br>
+            <button>Enviar</button>
+
+
+        </form>
+        <h1>register</h1>
+        <form method="post" action="Register" name="registro">
+            Email <input name="email"><br>
+            User: <input name="user"><br>
+            Password: <input  type="password" name="password"><br>
+            Password confirm: <input type="password" name="password2"><br>
+            Country <input name="country"><br>
+            State or Province: <input name="st"><br>
+            <button>Enviar</button>
+        </form>
+        <h1>rFranchise</h1>
+        <form method="post" action="RegisterFranquicia" name="registro"> 
+            Name <input name="name"><br>
+            NIF: <input name="nif"><br>
+            Address <input name="address"><br>
+            Email <input name="email"><br>
+            Telephone <input name="telefono"><br>
+            Surname <input name="surname"><br>
+            Password: <input  type="password" name="password"><br>
+            Password confirm: <input type="password" name="password2"><br>
+            <button>Enviar</button>
+        </form>
+        <h1>userProfile</h1>
+         <form method="post" action="ProfileUser" name="perfil"> 
+                <!-- Cargar el valor actual de cada atributo en el input -->
+                Email: <input type="email" name="email" /><br />
+                Current password:  <input  type="password" name="password" />
+                New password: <input type="password" name="password2" /><br />
+                <!-- De momento input de texto -->
+                Profile image: <input name="profileimage" /><br />
+                Country: <input name="country" /><br />
+                Address: <input name="address" /><br />
+                City: <input name="city" /><br />
+                State or province: <input name="st"><br />
+                CP: <input name="cp" /><br />
+
+                <button>Enviar</button>
+            </form>
+    </body>
+</html>

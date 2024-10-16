@@ -1,0 +1,178 @@
+   
+            <div id="menu" class="row clearfix fondo ">
+                <div id="logo" class="col-md-2 column">
+
+                </div>
+                <div class="col-md-8 column ">
+                    <form method="post" action="Buscador">
+                        <input id="search" type="text" class="form-control" name="search"></input>
+                        <button id="bsearch" type="submit" class="btn btn-default"></button>
+                    </form>
+                </div>
+                <div id="acceso" class="col-md-2 column ">
+                    
+                    
+                    <button id="bentrar" href="#login" class="btn btn-default" data-toggle="modal">Entrar</button>
+                </div>
+            </div>
+            
+                <div id="login" class="modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelleby="myModalLabel">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" data-dismiss="modal" aria=hidde="true" class="close">&times;</button>
+                            </div> 
+                            <div class="modal-body">
+                                <form id="login-form">      
+                                                <label class="username">
+                                                    <span>conectarse con:</span>
+                                                </label>
+                                                <div class="col-md-12 column">
+                                                    <div class="row clearfix">
+                                                        <div class="col-md-6 column">
+                                                            <button id="fb" type="button" class="btn btn-info btn-sm">facebook</button>
+                                                        </div>
+                                                        <div class="col-md-6 column">
+                                                            <button id="tw" type="button" class="btn btn-sm">twitter</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                    
+                                        <label class="username">
+                                            <span>Usuario o email:</span>
+                                            <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Usuario">
+                                        </label>
+                                            
+                                        <label class="password">
+                                            <span>Contrase&ntilde;a:</span>
+                                            <input id="password" name="password" value="" type="password" placeholder="Contrase&ntilde;a">
+                                        </label>
+                                        <p>
+                                            <input type="checkbox" /> Acu&eacute;rdate de m&iacute;
+                                        </p>
+
+                                        <button class="submit button" type="button">Acceder</button>
+                                        
+
+                                        <p>
+                                            ¿No tienes cuenta? <a class="forgot" href="#register" data-toggle="modal" data-dismiss="modal" aria=hidde="true" class="close"> ¡Reg&iacute;strate!</a>
+                                        </p>
+                                        <p>
+                                            <a class="forgot" href="#">¿Olvidaste la contrase&ntilde;a?</a>
+                                        </p>
+                                    </fieldset>
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div id="register" class="modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelleby="myModalLabel">
+                    <div class="modal-dialog modal-lg">
+                        <div id="register-content" class="modal-content">
+                            <div class="modal-header">
+
+                                <button type="button" data-dismiss="modal" aria=hidde="true" class="close">&times;</button>
+                                <p id="register-type"> Registrarse como:</p>
+                            </div> 
+                            <div class="modal-body">
+                                <div id="register-container" class="container">
+                                    <div class="row clearfix">
+                                        <div id="user-type"class="col-md-4 column span7 text-right">
+                                            <ul id="tipousuario" class="nav nav-stacked">
+                                              <li id="busuario" class="active"><a href="#">Usuario</a></li>
+                                              <li id="bfranquicia" class=""><a href="#">Franquiciado</a></li>
+                                              <li id="bcomercio" class=""><a href="#">Comercio</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4 column">
+                                            <form method="post" action="Register" name="registro">
+                                                <div id="rusuario">
+                                                    Email <input name="email"><br>
+                                                    User: <input name="user"><br>
+                                                    Password: <input  type="password" name="password"><br>
+                                                    Password confirm: <input type="password" name="password2"><br>
+                                                    Country <input name="country"><br>
+                                                    State or Province: <input name="st"><br>
+                                                    <button>Enviar</button>
+                                                </div>
+                                                <div id="rfranquicia">
+                                                    <form method="post" action="RegisterFranquicia" name="registro"> 
+                                                        Name <input name="name"><br>
+                                                        NIF: <input name="nif"><br>
+                                                        Address <input name="address"><br>
+                                                        Email <input name="email"><br>
+                                                        Telephone <input name="telefono"><br>
+                                                        Surname <input name="surname"><br>
+                                                        Password: <input  type="password" name="password"><br>
+                                                        Password confirm: <input type="password" name="password2"><br>
+                                                        <button>Enviar</button>
+                                                    </form>
+                                                </div>
+                                                <div id="rcomercio">
+                                                    <form method="post" action="RegisterComercio" name="registro">
+                                                        BusinessName: <input type="text" name="businessName"><br> 
+                                                        Email: <input type="text" name="email"><br>
+                                                        Country: <input type="text" name="country"><br>
+                                                        FullAddress: <input type="text" name="fulladdress"><br>
+                                                        City: <input type="text" name="city"><br>
+                                                        StateOrProvince: <input type="text" name="stateOrProvince"><br>
+                                                        CP: <input type="text" name="cp"><br>
+                                                        Password: <input  type="text" name="password"><br>
+                                                        Password confirm: <input type="text" name="password2"><br>
+                                                        <button>Enviar</button>
+                                                    </form>
+                                                </div>
+                                            </form>
+                                        <div class="col-md-4 column">
+
+                                        </div>
+
+                                        </div>
+
+                                      
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <script src="js/bootstrap.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+            
+            <script>
+                        $(document).ready(function() {
+                            $("#tipousuario li").click(function() {
+                                $("#rusuario").hide();
+                                $("#rfranquicia").hide();
+                                $("#rcomercio").hide();
+                                $("#busuario").removeClass("active");
+                                $("#bfranquicia").removeClass("active");
+                                $("#bcomercio").removeClass("active");
+                            });
+                            $("#busuario").click(function() {
+                                $("#rusuario").show();
+                                $("#busuario").addClass("active")
+                            });
+                            $("#bfranquicia").click(function() {
+                                $("#rfranquicia").show();
+                                $("#bfranquicia").addClass("active")
+                            });
+                            $("#bcomercio").click(function() {
+                                $("#rcomercio").show();
+                                $("#bcomercio").addClass("active")
+                            });
+                        });
+
+    
+            </script>
+  
+        
+    
+
+    	
+
+

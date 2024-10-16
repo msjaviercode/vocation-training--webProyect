@@ -1,0 +1,126 @@
+<%-- 
+    Document   : profile
+    Created on : 12-may-2014, 9:57:14
+    Author     : Mushi
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Perfil - King Kupong</title>
+        <script src="js/bootstrap.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    </head>
+    <body>
+        <div class="fondo">
+            <div class="container-fluid fondo">
+                <div class="row clearfix">
+                    <jsp:include page="menu.jsp" flush="true" />
+                </div>
+            </div>
+            <div id="warp-profile" class="row clearfix">
+                <div id="listmenu" class="col-md-3 column ">
+                    <ul>
+                        <li id="medit">
+                            Editar Perfil
+                        </li>
+                        <li id="mcoupon">
+                            Cupones
+                        </li>
+                        <li id="mstatics">
+                            Estadísticas
+                        </li>
+                        <li id="mfranchise">
+                            Franquicia
+                        </li>
+                        <li id="mbusiness">
+                            Comercio
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="contenedor" class="col-md-8 column">
+                    <div id="edit" class="cprofile blanco">
+                        <h1> Ver / Editar Perfil </h1>
+                        <ul>
+                            <li>Ver datos</li>
+                            <li>Editar datos</li>
+                        </ul>
+                        <div id="vprofile">
+
+
+
+                        </div>
+                        <div id="eprofile">
+
+                            <form method="post" action="ProfileUser" name="perfil"> 
+                                <!-- Cargar el valor actual de cada atributo en el input -->
+                                <ul>
+                                    <li> Correo: </li> <input type="email" name="email" />
+                                    <li> Contraseña actual: </li> <input  type="password" name="password" />
+                                    <li> Contraseña nueva: </li> <input type="password" name="password2" />
+                                    <li> Imagen del perfil: </li><input type="file" id="profileimage" />
+                                    <li> País: </li><input name="country" /> 
+                                    <li> Ciudad: </li> <input name="city" />
+                                    <li> Provincia  </li><input name="st">
+                                    <li> Dirección:  </li><input name="address" />
+                                    <li> CP: </li><input name="cp" />
+
+                                    <button>Enviar</button>
+                                </ul>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div id="coupon" class="cprofile blanco" onclick="hideContent();">
+                        <h1>Administrador de Cupones</h1>
+                    </div>
+                    <div id="statics" class="cprofile blanco" onclick="hideContent();">
+                        <h1>Estadísticas</h1>
+                    </div>
+                    <div id="franchise" class="cprofile blanco" onclick="hideContent();">
+                        <h1>Franquicia</h1>
+                    </div>
+                    <div id="business" class="cprofile blanco" onclick="hideContent();">
+                        <h1>Comercio</h1>
+                    </div>
+                </div>
+                <div id="sep" class="col-md-1 column">
+                </div>
+
+            </div>
+            <jsp:include page="footer.jsp" flush="true" /> 
+        </div>
+
+    </body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>
+                        $(document).ready(function() {
+                            $("#listmenu li").click(function() {
+                                $(".cprofile").hide();
+                            });
+                            $("#medit").click(function() {
+                                $("#edit").show();
+                            });
+                            $("#mcoupon").click(function() {
+                                $("#coupon").show();
+                            });
+                            $("#mstatics").click(function() {
+                                $("#statics").show();
+                            });
+                            $("#mfranchise").click(function() {
+                                $("#franchise").show();
+                            });
+                            $("#mbusiness").click(function() {
+                                $("#business").show();
+                            });
+                        });
+
+    </script>
+
+
+</html>

@@ -1,0 +1,30 @@
+<%-- 
+    Document   : rfranchise
+    Created on : 02-abr-2014, 11:23:31
+    Author     : javier
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>KingKupong - Registro de Franquicia</title>
+    </head>
+    <body>
+        <jsp:include page="menu.jsp" flush="true" />
+        <form method="post" action="RegisterFranquicia" name="registro"> 
+            Name <input name="name"><br>
+            NIF: <input name="nif"><br>
+            Address <input name="address"><br>
+            Email <input name="email"><br>
+            Telephone <input name="telefono"><br>
+            Surname <input name="surname"><br>
+            Password: <input  type="password" name="password"><br>
+            Password confirm: <input type="password" name="password2"><br>
+            <button>Enviar</button>
+        </form>
+
+    </body>
+</html>

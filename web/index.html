@@ -1,0 +1,88 @@
+<%-- 
+    Document   : index
+    Created on : 01-abr-2014, 11:08:24
+    Author     : Mushi
+--%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+  
+	
+    <head>
+       
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/bootstrap.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link href='favicon.ico' rel='shortcut icon' type='image/x-icon'/>
+        <link href='favicon.ico' rel='icon' type='image/x-icon'/>
+        <title>King Kupong - Página de inicio</title>
+         <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <body>   
+
+        <div class="fondo">
+            <div id="content" class="container-fluid">
+                <div class="row clearfix">
+                    <div id="wrap" class="col-md-12 column ">
+                       <jsp:include page="menu.jsp" flush="true" />
+                        <div class="row clearfix ">
+                            <div id="background" class="col-md-12 column">
+                                <div id="sLogo">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-scroll" class="row clearfix ">
+                    <div  class="col-md-12 column">
+                        <div id="scroll" class="row clearfix">
+                            <div class="col-md-4 column">
+                                <img src="images/cupon.jpg" />
+                            </div>
+                            <div class="col-md-4 column">
+                                <img src="images/cupon.jpg" />
+                            </div>
+                            <div class="col-md-4 column">
+                                <img src="images/cupon.jpg" />
+                            </div>
+
+                        </div>
+                        <ul id="paginas" class="pagination pagination-sm">
+                            <li>
+                                <a href="#"><</a>
+                            </li>
+                            <li>
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+             <jsp:include page="footer.jsp" flush="true" />
+            </div>
+        </div>
+
+
+
+
+    </body>
+
+</html>
